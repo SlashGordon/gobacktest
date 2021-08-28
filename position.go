@@ -35,6 +35,11 @@ type Position struct {
 	totalProfitLoss  float64
 }
 
+// get quantity of position
+func (p *Position) GetQty() int64 {
+	return p.qty
+}
+
 // Create a new position based on a fill event
 func (p *Position) Create(fill FillEvent) {
 	p.timestamp = fill.Time()

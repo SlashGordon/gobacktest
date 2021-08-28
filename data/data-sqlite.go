@@ -9,7 +9,7 @@ import (
 	"strings"
 	"time"
 
-	gbt "github.com/dirkolbrich/gobacktest"
+	gbt "github.com/SlashGordon/gobacktest"
 )
 
 // BarEventFromSQLiteData loads the market data from a SQLite database.

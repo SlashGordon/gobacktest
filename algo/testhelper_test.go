@@ -3,7 +3,7 @@ package algo
 import (
 	"time"
 
-	gbt "github.com/dirkolbrich/gobacktest"
+	gbt "github.com/SlashGordon/gobacktest"
 )
 
 func testHelperTimeMap(dates []string) map[string]time.Time {

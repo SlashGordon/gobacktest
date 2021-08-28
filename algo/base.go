@@ -1,7 +1,7 @@
 package algo
 
 import (
-	gbt "github.com/dirkolbrich/gobacktest"
+	gbt "github.com/SlashGordon/gobacktest"
 )
 
 // boolAlgo is a base Algo which return a set bool value

@@ -3,9 +3,9 @@ package main
 import (
 	"fmt"
 
-	gbt "github.com/dirkolbrich/gobacktest"
-	"github.com/dirkolbrich/gobacktest/algo"
-	"github.com/dirkolbrich/gobacktest/data"
+	gbt "github.com/SlashGordon/gobacktest"
+	"github.com/SlashGordon/gobacktest/algo"
+	"github.com/SlashGordon/gobacktest/data"
 )
 
 func main() {

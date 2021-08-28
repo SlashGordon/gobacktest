@@ -10,9 +10,9 @@ Example tests are in the `/examples` folder.
 package main
 
 import (
-    "github.com/dirkolbrich/gobacktest/pkg/backtest"
-    "github.com/dirkolbrich/gobacktest/pkg/data"
-    "github.com/dirkolbrich/gobacktest/pkg/strategy"
+    "github.com/SlashGordon/gobacktest/pkg/backtest"
+    "github.com/SlashGordon/gobacktest/pkg/data"
+    "github.com/SlashGordon/gobacktest/pkg/strategy"
 )
 
 func main() {

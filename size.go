@@ -49,6 +49,11 @@ func (s *Size) SizeOrder(order OrderEvent, data DataEvent, pf PortfolioHandler) 
 		}
 	}
 
+	if o.Direction() == 0 &&
+		(pf.Cash() < float64(o.qty)*data.Price()) {
+		return nil, errors.New("insufficient account balance")
+	}
+
 	return o, nil
 }
 
