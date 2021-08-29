@@ -124,10 +124,12 @@ func (p *Portfolio) OnSignal(signal SignalEvent, data DataHandler) (*Order, erro
 
 	sizedOrder, err := p.sizeManager.SizeOrder(initialOrder, latest, p)
 	if err != nil {
+		return nil, err
 	}
 
 	order, err := p.riskManager.EvaluateOrder(sizedOrder, latest, p.holdings)
 	if err != nil {
+		return nil, err
 	}
 
 	return order, nil
