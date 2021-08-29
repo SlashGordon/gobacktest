@@ -236,6 +236,11 @@ func (p Portfolio) Value() float64 {
 	return value
 }
 
+// Yield return the yield value of the portfolio
+func (p Portfolio) Yield() float64 {
+	return (p.Value()/p.initialCash - 1) * 100
+}
+
 // Holdings returns the holdings of the portfolio
 func (p Portfolio) Holdings() map[string]Position {
 	return p.holdings
